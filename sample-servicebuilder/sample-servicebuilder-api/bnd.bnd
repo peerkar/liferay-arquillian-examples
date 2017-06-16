@@ -1,0 +1,9 @@
+Bundle-Name: Sample Servicebuilder API
+Bundle-SymbolicName: fi.soveltia.arquillian.servicebuilder.api
+Bundle-Version: 1.0.0-SNAPSHOT
+Export-Package:\
+	fi.soveltia.arquillian.servicebuilder.exception,\
+	fi.soveltia.arquillian.servicebuilder.model,\
+	fi.soveltia.arquillian.servicebuilder.service,\
+	fi.soveltia.arquillian.servicebuilder.service.persistence
+-includeresource: META-INF/service.xml=../sample-servicebuilder-service/service.xml

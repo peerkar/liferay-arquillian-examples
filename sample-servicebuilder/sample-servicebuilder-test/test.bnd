@@ -1,0 +1,3 @@
+Bundle-Name: Sample MVC Portlet Test
+Bundle-SymbolicName: fi.soveltia.arquillian.servicebuilder.test
+Bundle-Version: 1.0.0-SNAPSHOT

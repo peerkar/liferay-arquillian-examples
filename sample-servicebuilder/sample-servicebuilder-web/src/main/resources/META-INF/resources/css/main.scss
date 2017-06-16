@@ -1,0 +1,17 @@
+.sample-servicebuilder-portlet { 
+	
+	.entry { 
+		border-bottom: 1px solid #ccc;
+		margin:30px;
+		padding: 20px;
+		
+		.author {
+			color: #aaa;
+			font-style: italic;
+		}
+	}
+
+	.new-entry-form {
+		padding: 50px;
+	}
+} 

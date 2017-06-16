@@ -1,0 +1,25 @@
+<arquillian xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://jboss.org/schema/arquillian"
+	xsi:schemaLocation="http://jboss.org/schema/arquillian http://jboss.org/schema/arquillian/arquillian_1_0.xsd">
+
+	<container qualifier="tomcat" default="true">
+		<configuration>
+			<property name="jmxServiceURL">service:jmx:rmi:///jndi/rmi://localhost:8099/jmxrmi</property>
+			<property name="httpHost">localhost</property>
+			<property name="httpPort">8080</property>
+			<!-- 
+			<property name="jmxUsername">tomcat</property>
+			<property name="jmxPassword">tomcat</property>
+			 -->
+		</configuration>
+	</container>
+		  
+	<extension qualifier="webdriver">
+		<property name="browser">phantomjs</property>
+	</extension>
+
+	<extension qualifier="graphene">
+		<property name="url">http://localhost:8080</property>
+	</extension>
+</arquillian>
+

@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" default-destroy-method="destroy" default-init-method="afterPropertiesSet" xsi:schemaLocation=" http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean class="fi.soveltia.arquillian.servicebuilder.service.impl.GuestbookEntryLocalServiceImpl" id="fi.soveltia.arquillian.servicebuilder.service.GuestbookEntryLocalService" />
+	<bean class="fi.soveltia.arquillian.servicebuilder.service.impl.GuestbookEntryServiceImpl" id="fi.soveltia.arquillian.servicebuilder.service.GuestbookEntryService" />
+	<bean class="fi.soveltia.arquillian.servicebuilder.service.persistence.impl.GuestbookEntryPersistenceImpl" id="fi.soveltia.arquillian.servicebuilder.service.persistence.GuestbookEntryPersistence" parent="basePersistence" />
+</beans>
